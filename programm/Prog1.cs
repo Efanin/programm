@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace programm
 {
-    internal class Prog1
+    static class Prog1
     {
+        static public void main()
+        {
+            Console.WriteLine("hello world");
+        }
     }
 }
