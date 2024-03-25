@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace programm
+namespace programm.LinQ
 {
     static class Extension
     {
-        public static dynamic Print(this Array array)
+        public static T[] Print<T>(this T[] array)
         {
             foreach (var item in array)
                 Console.Write(item + "\t");
             Console.WriteLine();
             return array;
         }
-        public static dynamic Print(this object item)
+        public static T Print<T>(this T item)
         {
             Console.WriteLine(item);
             return item;

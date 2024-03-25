@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace programm
+namespace programm.LinQ
 {
     static class Arr5
     {
@@ -12,9 +12,9 @@ namespace programm
         {
             int[] arr = new int[3].Select(x => new Random().Next(100)).ToArray().Print();
             arr.Sum().Print();
-            if      (arr.SequenceEqual(arr.OrderBy(x => x).ToArray()))           Console.WriteLine("up");
+            if (arr.SequenceEqual(arr.OrderBy(x => x).ToArray())) Console.WriteLine("up");
             else if (arr.SequenceEqual(arr.OrderByDescending(x => x).ToArray())) Console.WriteLine("down");
-            else                                                                 Console.WriteLine("dont ordered");
+            else Console.WriteLine("dont ordered");
         }
     }
 }

@@ -1,10 +1,10 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace programm
+namespace programm.LinQ
 {
     internal class Arr1
     {
@@ -18,7 +18,7 @@ namespace programm
             {
                 arr[i] = random.Next(100);
             }
-            int size = 0;     
+            int size = 0;
             for (int i = 0; i < arr.Length; i++)
             {
                 if (arr[i] % 2 == 0)

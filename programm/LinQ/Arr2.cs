@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace programm
+namespace programm.LinQ
 {
     internal class Arr2
     {
@@ -20,13 +20,13 @@ namespace programm
             {
                 arr2[i] = random.Next(100);
             }
-            foreach(var i in arr2)
+            foreach (var i in arr2)
             {
-                Console.Write(i+" ");
+                Console.Write(i + " ");
             }
             Console.WriteLine();
             int sum = 0;
-            foreach(int i in arr2)
+            foreach (int i in arr2)
             {
                 sum += i;
             }

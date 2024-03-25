@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace programm
+namespace programm.LinQ
 {
     static class Arr4
     {
@@ -21,7 +21,7 @@ namespace programm
             {
                 if (arr[i] < 150)
                     sum += arr[i];
-            } 
+            }
             Console.WriteLine(sum);
             new int[10].Select(x => new Random().Next(300)).Where(x => x < 150).Sum().Print();
         }
