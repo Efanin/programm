@@ -1,3 +1,4 @@
 ﻿using programm.LinQ;
+using System;
 
-double[] arr = new double[10].Select(x=>new Random().NextDouble()).ToArray().Print().Where(x=>x%2==0).ToArray().Print(); 
+Arr8.main();
